@@ -7,8 +7,8 @@ const Tables = lazy(() => import("components/organisms/tables"));
 
 const Dashboard = () => {
   return (
-    <div className="">
-      <div className="flex items-center justify-center px-4 gap-x-6 mb-6">
+    <>
+      <div className="flex items-center justify-center px-4 mb-6 flex-col gap-y-6 lg:flex-row lg:gap-x-6">
         <Suspense fallback={<Skeleton />}>
           <Chart />
         </Suspense>
@@ -19,7 +19,7 @@ const Dashboard = () => {
       <Suspense fallback={<Skeleton />}>
         <Tables />
       </Suspense>
-    </div>
+    </>
   );
 };
 

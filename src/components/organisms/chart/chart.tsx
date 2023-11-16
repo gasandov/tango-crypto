@@ -4,6 +4,7 @@ import {
   Legend,
   Line,
   LineChart,
+  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
@@ -76,7 +77,7 @@ const Chart = () => {
   }, []);
 
   return (
-    <div className="rounded-xl border border-zinc-500 shadow-md bg-neutral-100">
+    <ResponsiveContainer width="100%" height="100%" className="text-white">
       <LineChart
         width={600}
         height={300}
@@ -104,7 +105,7 @@ const Chart = () => {
           activeDot={{ r: 8 }}
         />
       </LineChart>
-    </div>
+    </ResponsiveContainer>
   );
 };
 

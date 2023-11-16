@@ -67,15 +67,15 @@ const Tables = () => {
   }, []);
 
   return (
-    <div className="mt-6 px-4 m-auto flex justify-center gap-x-4">
+    <div className="my-6 px-4 m-auto flex justify-center flex-col gap-y-6 lg:flex-row lg:gap-x-4">
       <Table
-        className="bg-neutral-100"
+        className="text-white table-auto w-full"
         name="BTC"
         headers={["Time", "USD", "EUR"]}
         content={historicalData.btc as any}
       />
       <Table
-        className="bg-neutral-100 table-auto"
+        className="text-white table-auto w-full"
         name="ETH"
         headers={["Time", "USD", "EUR", "BTC"]}
         content={historicalData.eth as any}

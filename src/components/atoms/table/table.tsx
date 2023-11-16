@@ -23,6 +23,13 @@ const Table = forwardRef<HTMLTableElement, Props & ComponentProps<"table">>(
           </tr>
         </thead>
         <tbody>
+          {content.length === 0 && (
+            <tr className="text-center">
+              <td className="border border-slate-700" colSpan={headers.length}>
+                No data
+              </td>
+            </tr>
+          )}
           {content.map((row, idx) => (
             <tr key={`table-${name}-row-${idx}`}>
               {Object.values(row).map((cell, cIdx) => (
