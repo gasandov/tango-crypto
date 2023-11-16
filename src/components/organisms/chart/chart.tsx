@@ -77,7 +77,7 @@ const Chart = () => {
   }, []);
 
   return (
-    <ResponsiveContainer width="100%" height="100%" className="text-white">
+    <ResponsiveContainer width="100%" height={300}>
       <LineChart
         width={600}
         height={300}

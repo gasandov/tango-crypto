@@ -67,7 +67,7 @@ const Tables = () => {
   }, []);
 
   return (
-    <div className="my-6 px-4 m-auto flex justify-center flex-col gap-y-6 lg:flex-row lg:gap-x-4">
+    <div className="my-6 px-4 m-auto flex justify-center flex-col gap-y-6 lg:flex-row lg:gap-x-4 lg:max-h-96 lg:overflow-auto">
       <Table
         className="text-white table-auto w-full"
         name="BTC"
